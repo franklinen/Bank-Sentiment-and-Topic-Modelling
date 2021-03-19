@@ -1,0 +1,8 @@
+export ENV=development
+export DATABASE_URI='dialect+driver://user:password@host:port/database'
+
+# Twitter credentials
+export CONSUMER_KEY='twitter_developer_app_consumer_key'
+export CONSUMER_SECRET='twitter_developer_app_consumer_secret'
+export ACCESS_TOKEN='twitter_developer_app_access_token'
+export ACCESS_TOKEN_SECRET='twitter_developer_app_access_token_secret'
