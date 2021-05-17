@@ -1,0 +1,26 @@
+version: '2.1'
+services:
+  postgres:
+    image: postgres:12.1
+    ports:
+        - "5432:5432"
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=postgres
+    volumes:
+        - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U postgres"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+  sentiment_analysis_server:
+    image: sentiment-analysis
+    volumes:
+      - ./sentiment_analysis/:/usr/src/app/sentiment_analysis/
+    ports:
+        - "8080:5000"
+    depends_on:
+        postgres:
+          condition: service_healthy
