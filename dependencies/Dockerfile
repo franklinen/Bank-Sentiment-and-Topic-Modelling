@@ -1,5 +1,5 @@
-FROM python:3.7-slim-buster
-LABEL maintainer="Siphu"
+FROM python:3.8-slim-buster
+LABEL maintainer="Frankline"
 
 RUN apt-get update && apt-get install -y python3-dev build-essential
 
