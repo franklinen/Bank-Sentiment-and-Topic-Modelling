@@ -8,6 +8,7 @@ Twitter is used every day by people to express their feelings or thoughts, speci
 Neural networks will be used to perform the sentiment analysis. 
 
 Purpose
+
 The goal of this project is to:
 
 To build a PostgreSQL database in order to store tweets about 'Avengers' streamed from Twitter API
@@ -16,11 +17,13 @@ Develop a neural network to perform a sentiment analysis
 Build a front end to visualize interactions between users tweeting with keywords about banks
 
 Data Set Information
+
 There are two ways to capture tweets with Tweepy. The first one is using the REST search API, tweepy.API, which searches against a sampling of recent public tweets published in the past 7 days. The second one is streaming realtime tweets by using the Twitter streaming api that differs from the REST api in the way that this one pull data from twitter while the streaming api pushes messages to a persistent session. In this project, the last option was used to capture realtime tweets.
 
 Twitter APIs always return tweets encoded using JavaScript Object Notation (JSON), an unstructured and flexible type which is based on key-value pairs with attributes and associated values that describe objects. Each tweet contains an author, message, unique ID, a timestamp and creation date when it was posted, among others; each user has a name, id and number of followers. Relational databases such as PostgreSQL has a great performance handling JSON so a relational database and specifically, PostgreSQL db was built to store the tweets streamed from Twitter API.
 
 Analysis
+
 This repository contains four files:
 
 
