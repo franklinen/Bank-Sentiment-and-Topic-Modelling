@@ -27,10 +27,10 @@ Analysis
 This repository contains four files:
 
 * Pipeline
-*
-	*data pipeline*
+
+	* data pipeline*
 	
-	*model pipeline*
+	* model pipeline*
 * Dependencies
 * App
 * requirements
