@@ -1,4 +1,4 @@
-# Bank Sentiment and Topic Modelling  (work in Progress) #
+# Bank Sentiment and Topic Modelling  #
 ### Twitter Sentiment Analysis and Topic Modelling of Five Major Banks in Canada ###
 
 Introduction
